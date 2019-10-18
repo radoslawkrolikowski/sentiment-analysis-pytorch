@@ -33,6 +33,20 @@ The repository will walk you through the process of building a complete Sentimen
 Dataset is available under the following link:
 <http://ai.stanford.edu/~amaas/data/sentiment/>
 
+Unpack the downloaded *tar.gz* file using:
+
+`tar -xzf rebol.tar.gz`
+
+Rearrange the data to the following structure:
+
+    dataset
+    	├── test
+    	│	  ├── positive
+    	│	  ├── negative
+    	├── train
+              ├── positive
+    	  	  └── negative
+
 
 ### Requirements
 
