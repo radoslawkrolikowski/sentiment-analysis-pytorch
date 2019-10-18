@@ -1,0 +1,5 @@
+*.txt linguist-vendored
+.gitattributes linguist-vendored
+assets/scattertext_visualization.html linguist-vendored
+README.md linguist-documentation=true
+
