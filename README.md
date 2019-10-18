@@ -35,7 +35,7 @@ Dataset is available under the following link:
 
 Unpack the downloaded *tar.gz* file using:
 
-`tar -xzf rebol.tar.gz`
+`tar -xzf acllmdb.tar.gz`
 
 Rearrange the data to the following structure:
 
