@@ -41,11 +41,11 @@ Rearrange the data to the following structure:
 
     dataset
     	├── test
-    	│	  ├── positive
-    	│	  ├── negative
+    	│     ├── positive
+    	│     ├── negative
     	├── train
               ├── positive
-    	  	  └── negative
+    	      └── negative
 
 
 ### Requirements
