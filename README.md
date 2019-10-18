@@ -40,12 +40,12 @@ Unpack the downloaded *tar.gz* file using:
 Rearrange the data to the following structure:
 
     dataset
-    	├── test
-    	│     ├── positive
-    	│     ├── negative
-    	├── train
-              ├── positive
-    	      └── negative
+      ├── test
+      │     ├── positive
+      │     ├── negative
+      ├── train
+            ├── positive
+            └── negative
 
 
 ### Requirements
