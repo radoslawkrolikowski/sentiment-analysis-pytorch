@@ -234,9 +234,16 @@ class BatchIterator:
 
         # Iterate through batches
         for i in range(len(self.input_batches[0])):
+            feat_list = []
+            for j in range(1, len(self.input_batches)):
+                feat = self.input_batches[j][i].type(torch.FloatTensor).unsqueeze(1)
+                feat_list.append(feat)
 
-            for j in range(len(self.input_batches)):
-                to_yield['input_{}'.format(j)] = self.input_batches[j][i]
+            if feat_list:
+                input_feat = torch.cat(feat_list, dim=1)
+                to_yield['input_feat'] = input_feat
+
+            to_yield['input_seq'] = self.input_batches[0][i]
 
             to_yield['target'] = self.target_batches[i]
             to_yield['x_lengths'] = self.x_len_batches[i]
