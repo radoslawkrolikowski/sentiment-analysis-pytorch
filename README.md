@@ -34,7 +34,7 @@ The repository will walk you through the process of building a complete Sentimen
     In this notebook, we will implement the bidirectional Gated Recurrent Unit model that uses features extracted in the first tutorial.
 
 
-* [biGRU with Glove vectors](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb) or view the notebook using nbviewer here: [biGRU with Glove vectors nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/4_biGRU_with_Glove_vectors.ipynb)
+* [biGRU with Glove vectors](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb) or view the notebook using nbviewer here: [biGRU with Glove vectors nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb)
 
     This notebook covers the implementation of the bidirectional Gated Recurrent Unit model, which uses pre-trained Glove word embeddings.
 
