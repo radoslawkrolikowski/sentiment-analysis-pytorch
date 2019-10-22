@@ -28,6 +28,12 @@ The repository will walk you through the process of building a complete Sentimen
 	
     In the third notebook, the bidirectional Gated Recurrent Unit model will be built. In our neural network we will implement and use the following architectures and techniques: bidirectional GRU, stacked (multi-layer) GRU, dropout/spatial dropout, max-pooling, avg-pooling. The hyperparameters fine-tuning process will be presented. After choosing the proper parameters set, we will train our model and determine the generalization error. 
 
+
+* [biGRU with additional features](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/4_biGRU_with_additional_features.ipynb) or view the notebook using nbviewer here: [biGRU with additional features nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/4_biGRU_with_additional_features.ipynb)
+
+    In this notebook, we will implement the bidirectional Gated Recurrent Unit model that uses features extracted in the first tutorial.
+
+
 ### Dataset
 
 Dataset is available under the following link:
@@ -101,7 +107,7 @@ Inside your virtual environment launch the *jupyter notebook*, and open the note
 Model  | Test accuracy | Validation accuracy | Training accuracy 
 ------------- | :---: |:---: | :---:
 biGRU  | 0.880 |0.878 | 0.908
---------- | -------- |------------- | -------------
+biGRU with extra features | 0.882 | 0.881| 0.898
 
 
 ### References
