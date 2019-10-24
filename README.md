@@ -36,7 +36,12 @@ The repository will walk you through the process of building a complete Sentimen
 
 * [biGRU with Glove vectors](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb) or view the notebook using nbviewer here: [biGRU with Glove vectors nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb)
 
-    This notebook covers the implementation of the bidirectional Gated Recurrent Unit model, which uses pre-trained Glove word embeddings.
+    This notebook covers the implementation of the bidirectional Gated Recurrent Unit model, which uses pre-trained Glove word embeddings together with additional features.
+
+
+* [TextCNN](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/6_TextCNN.ipynb) or view the notebook using nbviewer here: [TextCNN nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/6_TextCNN.ipynb)
+
+    In this notebook, we will build the Convolutional Neural Network model for text classification.
 
 
 ### Dataset
@@ -112,8 +117,9 @@ Inside your virtual environment launch the *jupyter notebook*, and open the note
 Model  | Test accuracy | Validation accuracy | Training accuracy 
 ------------- | :---: |:---: | :---:
 biGRU  | 0.880 |0.878 | 0.908
-biGRU with extra features | 0.882 | 0.881| 0.898
-biGRU with Glove vectors | 0.862 | 0.862| 0.842
+biGRU with extra features | 0.882 | 0.881 | 0.898
+biGRU with Glove vectors | 0.862 | 0.862 | 0.842
+TextCNN | 0.859 | 0.847 | 0.833
 
 
 ### References
@@ -121,6 +127,7 @@ biGRU with Glove vectors | 0.862 | 0.862| 0.842
 * <https://pytorch.org/docs/stable/index.html>
 * <https://arxiv.org/pdf/1801.06146.pdf>
 * <https://arxiv.org/pdf/1705.02364.pdf>
+* <https://arxiv.org/pdf/1408.5882.pdf>
 * <https://en.wikipedia.org/wiki/Sentiment_analysis>
 * <https://monkeylearn.com/sentiment-analysis/#sentiment-analysis-use-cases-and-applications>
 * <https://www.kaggle.com/praveenkotha2/end-to-end-text-processing-for-beginners>
