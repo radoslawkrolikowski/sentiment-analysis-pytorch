@@ -120,9 +120,9 @@ Inside your virtual environment launch the *jupyter notebook*, and open the note
 
 Model  | Test accuracy | Validation accuracy | Training accuracy 
 ------------- | :---: |:---: | :---:
-biGRU  | 0.880 |0.878 | 0.908
-biGRU with extra features | 0.882 | 0.881 | 0.898
-biGRU with Glove vectors | 0.862 | 0.862 | 0.842
+BiGRU  | 0.880 |0.878 | 0.908
+BiGRU with extra features | 0.882 | 0.881 | 0.898
+BiGRU with Glove vectors | 0.862 | 0.862 | 0.842
 TextCNN | 0.859 | 0.847 | 0.833
 Transformer | 0.883 | 0.880 | 0.912
 
