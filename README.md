@@ -4,12 +4,12 @@ The repository will walk you through the process of building a complete Sentimen
 
 ### Table of contents
 
-* [Data preprocessing](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/1_data_processing.ipynb) or view the notebook using nbviewer here: [data preprocessing nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/1_data_processing.ipynb)
+* [Data preprocessing](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/1_data_processing.ipynb)
  	
     The first notebook covers data loading from the raw dataset, feature extraction and analysis, also text preprocessing and train/val/test sets preparation.
 
 
-* [Vocabulary and batch iterator](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/2_vocabulary.ipynb) or view the notebook using nbviewer here: [vocabulary and batch iterator nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/2_vocabulary.ipynb)
+* [Vocabulary and batch iterator](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/2_vocabulary.ipynb)
 	
     The second tutorial contains instructions on how to set up the vocabulary object that will be responsible for the following tasks:
 	* Creating dataset's vocabulary.
@@ -24,25 +24,29 @@ The repository will walk you through the process of building a complete Sentimen
 	* Enabling BatchIterator instance to iterate through all batches.
  
 
-* [biGRU model](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/3_biGRU.ipynb) or view the notebook using nbviewer here: [biGRU model nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/3_biGRU.ipynb)
+* [BiGRU model](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/3_biGRU.ipynb)
 	
     In the third notebook, the bidirectional Gated Recurrent Unit model will be built. In our neural network we will implement and use the following architectures and techniques: bidirectional GRU, stacked (multi-layer) GRU, dropout/spatial dropout, max-pooling, avg-pooling. The hyperparameters fine-tuning process will be presented. After choosing the proper parameters set, we will train our model and determine the generalization error. 
 
 
-* [biGRU with additional features](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/4_biGRU_with_additional_features.ipynb) or view the notebook using nbviewer here: [biGRU with additional features nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/4_biGRU_with_additional_features.ipynb)
+* [BiGRU with additional features](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/4_biGRU_with_additional_features.ipynb)
 
     In this notebook, we will implement the bidirectional Gated Recurrent Unit model that uses features extracted in the first tutorial.
 
 
-* [biGRU with Glove vectors](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb) or view the notebook using nbviewer here: [biGRU with Glove vectors nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb)
+* [BiGRU with Glove vectors](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/5_biGRU_with_Glove_vectors.ipynb)
 
     This notebook covers the implementation of the bidirectional Gated Recurrent Unit model, which uses pre-trained Glove word embeddings together with additional features.
 
 
-* [TextCNN](https://github.com/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/6_TextCNN.ipynb) or view the notebook using nbviewer here: [TextCNN nbviewer](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/6_TextCNN.ipynb)
+* [TextCNN](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/6_TextCNN.ipynb)
 
     In this notebook, we will build the Convolutional Neural Network model for text classification.
 
+
+* [Transformer model for classification](https://nbviewer.jupyter.org/github/radoslawkrolikowski/sentiment-analysis-pytorch/blob/master/7_Transformer.ipynb)
+
+    Implementation of the Self-Attention Transformer model for the classification task.
 
 ### Dataset
 
@@ -120,6 +124,7 @@ biGRU  | 0.880 |0.878 | 0.908
 biGRU with extra features | 0.882 | 0.881 | 0.898
 biGRU with Glove vectors | 0.862 | 0.862 | 0.842
 TextCNN | 0.859 | 0.847 | 0.833
+Transformer | 0.883 | 0.880 | 0.912
 
 
 ### References
@@ -128,6 +133,8 @@ TextCNN | 0.859 | 0.847 | 0.833
 * <https://arxiv.org/pdf/1801.06146.pdf>
 * <https://arxiv.org/pdf/1705.02364.pdf>
 * <https://arxiv.org/pdf/1408.5882.pdf>
+* <https://arxiv.org/pdf/1706.03762.pdf>
+* <http://www.peterbloem.nl/blog/transformers>
 * <https://en.wikipedia.org/wiki/Sentiment_analysis>
 * <https://monkeylearn.com/sentiment-analysis/#sentiment-analysis-use-cases-and-applications>
 * <https://www.kaggle.com/praveenkotha2/end-to-end-text-processing-for-beginners>
